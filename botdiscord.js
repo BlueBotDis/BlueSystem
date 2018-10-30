@@ -47,8 +47,8 @@ client.user.setActivity(streaming[Math.floor(Math.random() * streaming.length)],
 
 
 client.on('guildMemberAdd', member => {
-if(member.guild.id === "506583457422508084") {
-let role = member.guild.roles.find(r => r.name === "•Blues💎");
+if(member.guild.id === "505067777795686457") {
+let role = member.guild.roles.find(r => r.name === "Blues💎");
 member.addRole(role).catch(e => console.log(`Error Detected: ${e.message}`));
 }
 });
