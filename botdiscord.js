@@ -47,7 +47,7 @@ client.user.setActivity(streaming[Math.floor(Math.random() * streaming.length)],
 
 
 client.on('guildMemberAdd', member => {
-if(member.guild.id === "498078431972556800") {
+if(member.guild.id === "506583457422508084") {
 let role = member.guild.roles.find(r => r.name === "•Blues💎");
 member.addRole(role).catch(e => console.log(`Error Detected: ${e.message}`));
 }
@@ -78,20 +78,6 @@ client.on('guildMemberAdd', member => {
     });
  
  
- 
- 
- client.on('ready',async () => {
-  let guild = client.guilds.get("505067777795686457");
-  let cMembers = guild.channels.get("506881201944920079"); // Members
-  let cBots = guild.channels.get("506881094629457921"); // Bots
-  let cUser = guild.channels.get("506885705558130688"); // Bots
-  setInterval(() => {
-    cMembers.setName(`Members : ${guild.memberCount} `);
-    cBots.setName(`Servers : ${client.guilds.size} `);
-    cUser.setName(`Users: ${client.users.size} `);
-  }, 5000);
-});
-
  
 
 
